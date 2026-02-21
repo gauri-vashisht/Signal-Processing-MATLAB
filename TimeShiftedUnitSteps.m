@@ -4,6 +4,9 @@ n=-10:10;
 ud=(n-no)>=0;
 subplot(1,2,1);
 stem(n,ud,LineWidth=3);
+title('Unit Step Discrete Function');
+xlabel('n');
+ylabel('Amplitude');
 end;
 usd(2);
 
@@ -13,5 +16,8 @@ t=-10:0.01:10;
 uc=(t-to)>=0;
 subplot(1,2,2);
 plot(t,uc,LineWidth=3);
+title('Unit Step Continuous Function');
+xlabel('t');
+ylabel('Amplitude');
 end;
 usc(2);
